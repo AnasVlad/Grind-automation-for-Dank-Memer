@@ -17,3 +17,6 @@ I also use pytesseract for OCR, you need to download it.
 Notes:
 Will work flawlessly (I guess) if your internet connection and the bot's response is fast enough.
 Will sometimes got padlocked as your buttons did not show fast enough to be autoclicked and the script continues with other commands.
+
+Edit:
+I have put this python project on hold, instead I convert it to cpp

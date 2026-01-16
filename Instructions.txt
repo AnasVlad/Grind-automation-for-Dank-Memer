@@ -1,0 +1,60 @@
+# Auto Dank convert from python to cpp because python slow
+# Added padlock detection for when internet is slow or dank bot is slow
+# Runs forever until you close it manually
+
+Step 1: Download and Install MSYS2
+
+Link download: https://www.msys2.org/#installation
+
+Step 2: Download necessary things in terminal
+
+Open MSYS2 MINGW64 and write in the terminal
+pacman -Syu
+
+Do it several times until all fully updated and shows
+theres nothing to do
+
+Install MinGW64-bit GCC and tools
+pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-make
+
+Verify its version
+g++ --version
+
+Install tesseract OCR
+pacman -S mingw-w64-x86_64-tesseract-ocr mingw-w64-x86_64-tesseract-data-eng
+
+Install these 2 other things(Do it one by one)
+pacman -S mingw-w64-x86_64-leptonica
+pacman -S mingw-w64-x86_64-opencv
+
+Update (may take several tries) until theres nothing to do
+pacman -Syu
+
+NOW THIS IS IMPORTANT
+Search and open Environtment Variables
+Click Environment Variables...
+
+In User Variables for -user- section, click New and add name and value below, click OK
+TESSDATA_PREFIX
+C:\msys64\mingw64\share\tessdata\
+
+Double Click PATH and click New and add this directory (default) and click OK
+C:\msys64\mingw64\bin
+
+Step 3: Download my cpp file and put it on desktop (or anywhere its convenient)
+
+Step 4: Compile the file in MSYS2 MINGW64
+
+cd /c/users/you_username/desktop
+g++ anas.cpp -o anas.exe -ltesseract -lleptonica -lgdi32 -luser32
+
+Step 5: Open Discord where u play dank memer
+
+Step 6: Open the anas.exe file and quickly switch to Discord
+
+Step 7: Sleep
+
+
+
+
+
